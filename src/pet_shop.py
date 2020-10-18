@@ -60,11 +60,12 @@ def customer_can_afford_pet(customer, new_pet):
 
 def sell_pet_to_customer(dict, pet, customer):
     find_pet_by_name(dict, pet)
-    if customer_can_afford_pet(customer, pet):
-        add_or_remove_cash(dict, pet['price'])
-        remove_customer_cash(customer, pet['price'])
-        add_pet_to_customer(customer, pet)
-        increase_pets_sold(dict, 1)
+    if pet != None:
+        if customer_can_afford_pet(customer, pet):
+            add_or_remove_cash(dict, pet['price'])
+            remove_customer_cash(customer, pet['price'])
+            add_pet_to_customer(customer, pet)
+            increase_pets_sold(dict, 1)
 
          
     
