@@ -17,4 +17,5 @@ def increase_pets_sold(dict, amount):
 def get_stock_count(dict):
     return len(dict['pets'])
 
-    
+def get_pets_by_breed(dict, pedigree):
+    return len(dict['pets']['breed'] == pedigree)    
