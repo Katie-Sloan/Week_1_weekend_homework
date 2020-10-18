@@ -28,8 +28,7 @@ def find_pet_by_name(dict, pet_name):
     for pet in dict['pets']:
         if pet['name'] == pet_name:
             return pet
-
-
+        
 
 
 
