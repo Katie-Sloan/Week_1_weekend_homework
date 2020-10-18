@@ -24,6 +24,10 @@ def get_pets_by_breed(dict, pedigree):
             total_pets_in_breed.append(pet['breed'])
     return total_pets_in_breed
 
+def find_pet_by_name(dict, pet_name):
+    for pet in dict['pets']:
+        if pet['name'] == pet_name:
+            return pet
 
 
 
