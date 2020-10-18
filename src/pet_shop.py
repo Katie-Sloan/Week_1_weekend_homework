@@ -34,7 +34,8 @@ def remove_pet_by_name(dict, pet_name):
         if pet['name'] == pet_name:
             dict['pets'].remove(pet)
 
-
+def add_pet_to_stock(dict, new_pet):
+    dict['pets'].append(new_pet)
 
 
     
