@@ -18,4 +18,26 @@ def get_stock_count(dict):
     return len(dict['pets'])
 
 def get_pets_by_breed(dict, pedigree):
-    return len(dict['pets']['breed'] == pedigree)    
+    total_pets_in_breed = []
+    for pet in dict['pets']:
+        if pet['breed'] == pedigree:
+            total_pets_in_breed.append(pet['breed'])
+    return total_pets_in_breed
+
+
+
+
+
+
+
+    
+
+        
+
+
+    
+
+
+ 
+
+   
